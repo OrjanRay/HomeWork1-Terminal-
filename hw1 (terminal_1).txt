@@ -1,0 +1,76 @@
+1. Посмотреть где я - 
+pwd
+2. Создать папку - 
+mkdir foldermain
+3. Зайти в папку - 
+cd foldermain/
+4. Создать 3 папки - 
+mkdir folder1 && mkdir folder2 && mkdir folder3
+5.Зайти в любоую папку - 
+cd ~/foldermain/folder1
+6. Создать 5 файлов (3 txt, 2 json) - 
+touch file1.txt && touch file2.txt && touch file3.txt && touch file4.json && touch file5.json
+7. Создать 3 папки - 
+mkdir papka1 && mkdir papka2 && mkdir papka3
+8. Вывести список содержимого папки - ls
+9. Открыть любой txt файл - 
+nano file1.txt
+10.Написать туда что-нибудь, любой текст -
+hello world
+hello guys
+hello girls
+hello everyone
+11. Сохранить и выйти -
+ctrl+o
+ctrl+x
+12. Выйти из папки на уровень выше - 
+cd ../
+13. переместить любые 2 файла, которые вы создали, в любую другую папку - 
+mv file1.txt papka1 && mv file2.txt papka1
+14. скопировать любые 2 файла, которые вы создали, в любую другую папку - 
+cp file4.json papka2 && cp file5.json papka2
+15. Найти файл по имени - 
+find -name file1.txt
+16. просмотреть содержимое в реальном времени (команда grep) изучите как она работает - 
+cat file1.txt
+hello world
+hello guys
+hello girls
+hello everyone
+grep hello file1.txt 
+hello world
+hello guys
+hello girls
+hello everyone 
+17. вывести несколько первых строк из текстового файла - 
+head -n 2 file1.txt
+hello world
+hello guys
+18. вывести несколько последних строк из текстового файла - 
+tail -n 2 file1.txt
+hello girls
+hello everyone
+19. просмотреть содержимое длинного файла (команда less) изучите как она работает - 
+less file2.txt 
+20. вывести дату и время - 
+date 
+
+Tasks:
+
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+1. curl http://162.55.220.72:5005/terminal-hw-request
+2. 
+touch test.sh
+chmod a+x ./test.sh
+nano test.sh 
+#!/bin/bash
+cd foldermain 
+mkdir solo1 solo2 solo3 
+cd solo1 
+touch solo1.txtsolo2.txt solo3.txt 
+mkdir pew1 pew2 pew3 
+ls 
+mv solo1.txt solo2.txt pew1
